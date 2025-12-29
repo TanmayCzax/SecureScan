@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureScan: Cybersecurity App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SecureScan</h1>
+    
+    <!-- Password Analyzer -->
+    <div class="card">
+      <h2>Password Strength Analyzer</h2>
+      <input type="text" id="passwordInput" placeholder="Enter password">
+      <button onclick="checkPassword()">Check Strength</button>
+      <button onclick="generatePassword()">Generate Strong Password</button>
+      <div id="result"></div>
+    </div>
+
+    <!-- History -->
+    <div class="card">
+      <h2>History</h2>
+      <div id="history">No checks yet.</div>
+    </div>
+
+    <!-- Device Info -->
+    <div class="card">
+      <h2>Device Info</h2>
+      <button onclick="getDeviceInfo()">Check Device Info</button>
+    </div>
+
+    <!-- Network Info -->
+    <div class="card">
+      <h2>Network Info</h2>
+      <button onclick="getNetworkInfo()">Check Network</button>
+    </div>
+
+    <!-- Cyber Tips -->
+    <div class="card">
+      <h2>Cybersecurity Tip</h2>
+      <button onclick="showTip()">Show Tip</button>
+    </div>
+
+    <!-- Security Quiz -->
+    <div class="card">
+      <h2>Cybersecurity Quiz</h2>
+      <button onclick="startQuiz()">Start Quiz</button>
+      <div id="quiz"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="card">
+      <button onclick="toggleTheme()">Toggle Dark/Light Theme</button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
